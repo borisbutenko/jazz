@@ -21,42 +21,90 @@
 			Jazz
 		</h1>
 
-		<div class="gap-x-4 flex">
-			<div>
+		<div class="gap-x-4 flex w-full max-w-[1360px] justify-center">
+			<label class="input input-bordered flex items-center gap-2">
+				<input type="date" class=""/>
+				<input type="date" class=""/>
+			</label>
+
+			<div class="relative flex items-center">
 				<label>
-					<input type="text" placeholder="Любой тип" class="input input-bordered"/>
+					<input type="text" placeholder="Любой тип" class="input input-bordered pr-12"/>
 				</label>
 
-				<details class="dropdown">
-					<summary class="btn m-1">open or close</summary>
+				<details class="dropdown absolute right-4">
+					<summary class="btn btn-sm btn-circle">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.94141 12.9375L7.35562 11.5233L16.0001 20.1678L24.6447 11.5233L26.0589 12.9375L16.0001 22.9963L5.94141 12.9375Z" fill="white"/>
+						</svg>
+					</summary>
+
 					<ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-						<li><a>Item 1</a></li>
-						<li><a>Item 2</a></li>
+						<li><a>Item</a></li>
 					</ul>
 				</details>
 			</div>
 
-			<label>
-				<input type="text" placeholder="Любой проект" class="input input-bordered"/>
-			</label>
+			<div class="relative flex items-center">
+				<label>
+					<input type="text" placeholder="Любой проект" class="input input-bordered pr-12"/>
+				</label>
 
-			<label>
-				<input type="text" placeholder="Любой статус" class="input input-bordered"/>
-			</label>
+				<details class="dropdown absolute right-4">
+					<summary class="btn btn-sm btn-circle">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.94141 12.9375L7.35562 11.5233L16.0001 20.1678L24.6447 11.5233L26.0589 12.9375L16.0001 22.9963L5.94141 12.9375Z" fill="white"/>
+						</svg>
+					</summary>
 
-			<label>
-				<input type="text" placeholder="Точное совпадение" class="input input-bordered"/>
+					<ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+						<li><a>Item</a></li>
+					</ul>
+				</details>
+			</div>
+
+			<div class="relative flex items-center">
+				<label>
+					<input type="text" placeholder="Любой статус" class="input input-bordered pr-12"/>
+				</label>
+
+				<details class="dropdown absolute right-4">
+					<summary class="btn btn-sm btn-circle">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.94141 12.9375L7.35562 11.5233L16.0001 20.1678L24.6447 11.5233L26.0589 12.9375L16.0001 22.9963L5.94141 12.9375Z" fill="white"/>
+						</svg>
+					</summary>
+
+					<ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+						<li><a>Item</a></li>
+					</ul>
+				</details>
+			</div>
+
+			<label class="input input-bordered flex items-center gap-2">
+				<input type="text" placeholder="Точное совпадение" class="grow"/>
+				<input type="checkbox" class="toggle !bg-white/40"/>
 			</label>
 		</div>
 
-		<div>
+		<div class="relative w-full max-w-[1360px]">
 			<label>
 				<input
-					class="input input-lg input-bordered"
+					class="input input-lg input-bordered w-full"
 					type="text"
 					placeholder="Опишите проблему..."
 				>
 			</label>
+
+			<div class="absolute top-2 right-2 flex gap-x-2">
+				<button class="btn btn-ghost">
+					Поиск в support
+				</button>
+
+				<button class="btn btn-info">
+					Поиск
+				</button>
+			</div>
 		</div>
 	</main>
 </body>

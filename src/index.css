@@ -6,7 +6,8 @@ body {
 	@apply text-white;
 }
 
-.input {
+.input,
+.btn {
 	@apply rounded-[100px];
 }
 
