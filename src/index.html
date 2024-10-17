@@ -15,25 +15,25 @@
 		Jazz
 	</title>
 </head>
-<body>
+<body class="flex flex-col justify-center">
 	<main class="gap-y-4 flex flex-col items-center">
 		<h1 class="jersey-15-regular text-[160px] leading-[160px] tracking-wide">
 			Jazz
 		</h1>
 
 		<div class="gap-x-4 flex w-full max-w-[1360px] justify-center">
-			<label class="input input-bordered flex items-center gap-2">
+			<label class="input input-bordered flex items-center gap-2 bg-white/20">
 				<input type="date" class=""/>
 				<input type="date" class=""/>
 			</label>
 
 			<div class="relative flex items-center">
 				<label>
-					<input type="text" placeholder="Любой тип" class="input input-bordered pr-12"/>
+					<input type="text" placeholder="Любой тип" class="input input-bordered pr-12 bg-white/20"/>
 				</label>
 
-				<details class="dropdown absolute right-4">
-					<summary class="btn btn-sm btn-circle">
+				<details class="dropdown absolute top-2 right-3">
+					<summary class="btn btn-sm btn-circle bg-[rgba(165,210,255,0.4)] border-0">
 						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M5.94141 12.9375L7.35562 11.5233L16.0001 20.1678L24.6447 11.5233L26.0589 12.9375L16.0001 22.9963L5.94141 12.9375Z" fill="white"/>
 						</svg>
@@ -47,11 +47,11 @@
 
 			<div class="relative flex items-center">
 				<label>
-					<input type="text" placeholder="Любой проект" class="input input-bordered pr-12"/>
+					<input type="text" placeholder="Любой проект" class="input input-bordered pr-12 bg-white/20"/>
 				</label>
 
-				<details class="dropdown absolute right-4">
-					<summary class="btn btn-sm btn-circle">
+				<details class="dropdown absolute top-2 right-3">
+					<summary class="btn btn-sm btn-circle bg-[rgba(165,210,255,0.4)] border-0">
 						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M5.94141 12.9375L7.35562 11.5233L16.0001 20.1678L24.6447 11.5233L26.0589 12.9375L16.0001 22.9963L5.94141 12.9375Z" fill="white"/>
 						</svg>
@@ -65,11 +65,11 @@
 
 			<div class="relative flex items-center">
 				<label>
-					<input type="text" placeholder="Любой статус" class="input input-bordered pr-12"/>
+					<input type="text" placeholder="Любой статус" class="input input-bordered pr-12 bg-white/20"/>
 				</label>
 
-				<details class="dropdown absolute right-4">
-					<summary class="btn btn-sm btn-circle">
+				<details class="dropdown absolute top-2 right-3">
+					<summary class="btn btn-sm btn-circle bg-[rgba(165,210,255,0.4)] border-0">
 						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M5.94141 12.9375L7.35562 11.5233L16.0001 20.1678L24.6447 11.5233L26.0589 12.9375L16.0001 22.9963L5.94141 12.9375Z" fill="white"/>
 						</svg>
@@ -81,16 +81,16 @@
 				</details>
 			</div>
 
-			<label class="input input-bordered flex items-center gap-2">
-				<input type="text" placeholder="Точное совпадение" class="grow"/>
-				<input type="checkbox" class="toggle !bg-white/40"/>
+			<label class="input input-bordered flex items-center gap-2 bg-white/20">
+				<input type="text" placeholder="Точное совпадение"/>
+				<input type="checkbox" class="toggle !bg-[rgba(165,210,255,0.4)]"/>
 			</label>
 		</div>
 
 		<div class="relative w-full max-w-[1360px]">
 			<label>
 				<input
-					class="input input-lg input-bordered w-full"
+					class="input input-lg input-bordered w-full bg-white/20"
 					type="text"
 					placeholder="Опишите проблему..."
 				>
@@ -106,6 +106,19 @@
 				</button>
 			</div>
 		</div>
+
+		<footer class="mt-60 flex items-center justify-between w-full max-w-[1360px] text-white/70">
+			<b>Интеллектуальный поиск по инструменту JIRA</b>
+
+			<a href="#" class="inline-flex items-center">
+				Создано в OMP.ru
+
+				<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M33.5698 11.6061L33.5746 15.0759H43.1433L43.1385 24.6749H46.6226L46.6226 11.6061H33.5698Z" fill="#3570A7"/>
+					<path d="M31.3373 15.66H28.3415C16.271 15.66 15.6602 16.24 15.6602 28.304V29.928C15.6602 41.992 16.2419 42.572 28.3415 42.572H29.9993C42.0698 42.572 42.6806 41.992 42.6806 29.928V26.999C42.6806 26.999 42.6806 26.999 42.6806 26.97" stroke="white" stroke-width="3.48"/>
+				</svg>
+			</a>
+		</footer>
 	</main>
 </body>
 </html>
